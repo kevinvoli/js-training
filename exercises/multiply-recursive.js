@@ -10,6 +10,43 @@
  */
 
 // Your code :
+function multiply(par1,par2){
+    if ( par1<0 &&par2<0){
+        var m=par1
+        var z=par2
+        function mul(m,z){
+            return (m=== -1)?-z:mul(m-(-1),z-(-par2))
+        }
+        var to =mul(par1,par2)
+        return to  
+        }else if (par1>0&& par2>0){
+            var m=par1
+            var z=par2
+            function mul(m,z){
+                    return (m=== 1)? z: mul(m-1,z-(-par2))
+            }
+            var to = mul(par1,par2)
+            return to
+        }  else if((par1<0 && par2>0)){
+            var m=par1
+            var z=par2
+            function mul(m,z){
+                 return m===-1 ?  -z: mul(m-(-1),z-(-par2))
+            }
+            var to =mul(par1,par2)
+            return to
+        }else if((par1>0 && par2<0)){
+            var m=par1
+            var z=par2
+             function mul(m,z){
+                    return (m=== 1)? z:  mul(m-1,z-(-par2))   
+            }
+            var to = mul(par1,par2)
+            return to
+        }  else{
+            return 0
+        }
+}
 
 //* Begin of tests
 const assert = require('assert')

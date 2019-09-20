@@ -7,6 +7,16 @@
  * Of course you may not use the method directly
  *
  */
+function repeat(par1,par2){
+    var m=''
+    var i=0
+    while (i < par2) {
+        m=m+par1
+
+        i++
+    }
+    return m
+}
 
 //* Begin of tests
 const assert = require('assert')

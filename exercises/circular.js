@@ -8,6 +8,10 @@
  */
 
 // Your code :
+function tou(){
+    this.circular=this
+}
+var circular=new tou()
 
 //* Begin of tests
 const assert = require('assert')

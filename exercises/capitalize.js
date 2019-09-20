@@ -6,6 +6,23 @@
  * and in lowercase for the rest of the string
  *
  */
+function cutFirst(par){
+    var m=par.substring(1,par.length)
+    return m
+}
+function keepFirst(par){
+    var m=par.substring(0,1)
+    var n= m.toUpperCase()
+    
+    return n
+}
+function capitalize(par){
+    var m= keepFirst(par)
+    var n= cutFirst(par)
+    var b= n.toLowerCase()
+    var v= m+b
+    return v
+}
 
 
 //* Begin of tests

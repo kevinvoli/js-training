@@ -5,9 +5,13 @@
  * and return the first element
  *
  * @notions Data-Structures, Get
+ *
  */
 
 // Your code :
+function getFirst(par){
+    return par[0]
+}
 
 //* Begin of tests
 const assert = require('assert')

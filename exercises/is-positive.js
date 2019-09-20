@@ -8,6 +8,13 @@
  */
 
 // Your code:
+function isPositive(par){
+    if(par>0){
+        return true
+    }else{
+        return false
+    }
+}
 
 
 //* Begin of tests

@@ -11,5 +11,13 @@
 //* Begin of tests
 const assert = require('assert')
 
-assert.fail('You must write your own tests')
+function whisper(par){
+    var m= par.toLowerCase()
+    return m
+}
+assert.strictEqual(typeof whisper, 'function')
+assert.strictEqual(whisper.length, 1)
+assert.strictEqual(whisper('Salut') ,'salut')
+
+// assert.fail('You must write your own tests')
 // End of tests */

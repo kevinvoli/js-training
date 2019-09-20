@@ -5,6 +5,16 @@
  * and return a string of all the element separated by a space
  *
  */
+function sentence(par){
+    var m =''
+    var n
+    for(var i=0; i<par.length; i++){
+        m +=par[i]+' '
+    }
+    m=m.substring(0,m.length-1)
+
+    return m
+}
 
 
 //* Begin of tests

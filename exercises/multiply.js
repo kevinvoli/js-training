@@ -9,6 +9,41 @@
  */
 
 // Your code :
+function multiply(par1,par2){
+    if ((par1!=0 && par1<0)&&(par2!=0 && par2<0)){
+        var m=0
+        while (par1!=0) {
+            m=m+par2
+            par1++
+        }
+        return -m
+    }else if ((par1!=0 && par1>0)&&(par2!=0 && par2>0)){
+        var m=0
+        while (par1!=0) {
+            m=m+par2
+            par1--
+        }
+        return m
+    }
+    else if((par1<0 && par2>0)){
+        var m=0
+        while (par1!=0) {
+            m=m+par2
+            par1++
+        }
+        return -m
+    }else if((par1>0 && par2<0)){
+        var m=0
+        while (par1!=0) {
+            m=m+par2
+            par1--
+        }
+        return m}
+      else{
+        return 0
+    }
+    
+}
 
 //* Begin of tests
 const assert = require('assert')

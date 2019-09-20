@@ -8,6 +8,19 @@
  */
 
 // Your code :
+function sameSign(par1,par2){
+    if(par1===par2){
+        return true
+    }else if(par1>0 && par2>0){
+        return true
+    }else if(par1<0 && par2<0){
+        return true
+    }else if(par1===0 && par2===0) {
+        return true
+    }else{
+        return false
+    }
+}
 
 //* Begin of tests
 const assert = require('assert')

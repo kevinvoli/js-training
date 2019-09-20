@@ -10,6 +10,13 @@
  */
 
 // Your code :
+function abs(par){
+    if(par>=0){
+        return par
+    }else{
+        return -par
+    }
+}
 
 //* Begin of tests
 const assert = require('assert')

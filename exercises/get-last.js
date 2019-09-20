@@ -8,6 +8,9 @@
  */
 
 // Your code :
+function getLast(par){
+    return par[(par.length-1)]
+}
 
 //* Begin of tests
 const assert = require('assert')

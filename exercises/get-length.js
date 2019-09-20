@@ -8,6 +8,9 @@
  */
 
 // Your code :
+function getLength(par){
+    return par.length
+}
 
 //* Begin of tests
 const assert = require('assert')

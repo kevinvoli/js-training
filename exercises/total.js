@@ -5,6 +5,13 @@
  * and return the total
  *
  */
+function total(par){
+    var m=0
+    for(var i=0 ; i<par.length; i++){
+        m= par[i]+m
+    }
+    return m
+}
 
 
 //* Begin of tests
